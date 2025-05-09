@@ -1,0 +1,100 @@
+/* SECCIÓN SOBRE NOSOTROS */
+.about-hero {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #00fff7;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+/* SECCIÓN QUIÉNES SOMOS */
+.quienes-somos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a2e;
+    color: #f72585;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* SECCIÓN ODS */
+.ods-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle at center, #3a0ca3, #240046);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ods-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* TARJETAS ODS */
+.ods-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #7209b7;
+    max-width: 300px;
+    text-align: center;
+    color: #f1faee;
+    backdrop-filter: blur(10px);
+    border: 1px solid #4361ee;
+}
+
+.ods-card img {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 0 5px #4cc9f0);
+}
+
+.ods-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #00f5d4;
+}
+
+.ods-card p {
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+/* HEADER Y NAV */
+header {
+    background: linear-gradient(to right, #3a0ca3, #4361ee);
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 10px #00f5d4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00fff7;
+    text-shadow: 0 0 5px #00fff7;
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+}
+
+/* Marquesina estilo neon */
+.marquesina {
+    background-color: #0ff;
+    color: #000;
+    padding: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff, 0 0 10px #0ff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    padding: 15px;
+    border-bottom: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0ff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.nav-links a:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 15px #0ff, 0 0 20px #0ff;
+    border: 2px solid #0ff;
+}
+
+.nav-links .active {
+    color: #f0f;
+    text-decoration: underline;
+}
+
+/* Hero principal */
+.hero {
+    background-image: url('fondo index.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 80px rgba(0, 255, 255, 0.4);
+}
+
+.hero h1, .about-hero h1 {
+    font-size: 3em;
+    color: #f0f;
+    text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #ccc;
+    text-shadow: 0 0 5px #0ff;
+}
+
+/* Contenido */
+.contenido, .quienes-somos, .ods-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contenido h2, .quienes-somos h2, .ods-section h2 {
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+}
+
+.contenido p {
+    color: #ccc;
+}
+
+/* Secciones laterales */
+.seccion-justificacion, .seccion-relevancia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid #0ff;
+    border-bottom: 2px solid #0ff;
+    box-shadow: 0 0 15px #0ff;
+}
+
+.seccion-justificacion .texto,
+.seccion-relevancia .texto {
+    flex: 1;
+    padding: 20px;
+    color: #ccc;
+}
+
+.seccion-justificacion .imagen,
+.seccion-relevancia .imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.seccion-justificacion .imagen img,
+.seccion-relevancia .imagen img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #f0f;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #f0f;
+}
+
+/* ODS cards */
+.ods-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.ods-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0ff;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.ods-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #f0f;
+}
+
+.ods-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.ods-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #0ff;
+}
+
+.ods-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* About Hero */
+.about-hero {
+    background-color: #000;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 60px rgba(255, 0, 255, 0.4);
+}

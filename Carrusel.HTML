@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #141E30, #243B55);
+            color: #fff;
+        }
+
+        /* Cinta de navegación */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #00ffcc;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos de la galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .close-btn:hover {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cinta de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cinta de estilos.html">Inicio</a></li>
+                <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Carrusel.HTML">Carrusel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Galería interactiva -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="imagen 26.avif" alt="Imagen 1" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 27.jpg" alt="Imagen 2" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 28.webp" alt="Imagen 3" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 29.png" alt="Imagen 4" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 30.jpg" alt="Imagen 5" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 31.jpg" alt="Imagen 6" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 32.avif" alt="Imagen 7" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="imagen 33.png" alt="Imagen 8" class="gallery-img">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
+    <!-- Script para la galería -->
+    <script>
+        // Obtener todas las imágenes de la galería
+        const galleryImages = document.querySelectorAll('.gallery-img');
+
+        // Obtener el contenedor de Lightbox y la imagen dentro de él
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const closeButton = document.querySelector('.close-btn');
+
+        // Función para abrir el lightbox
+        function openLightbox(event) {
+            const imgSrc = event.target.src;
+            lightbox.style.display = 'flex';  // Mostrar el lightbox
+            lightboxImage.src = imgSrc;      // Cambiar la imagen al clickeada
+        }
+
+        // Función para cerrar el lightbox
+        function closeLightbox() {
+            lightbox.style.display = 'none';  // Ocultar el lightbox
+        }
+
+        // Asignar el evento de clic a todas las imágenes de la galería
+        galleryImages.forEach(image => {
+            image.addEventListener('click', openLightbox);
+        });
+
+        // Asignar el evento de clic al botón de cerrar
+        closeButton.addEventListener('click', closeLightbox);
+
+        // Cerrar el lightbox si se hace clic fuera de la imagen
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    </script>
+
+</body>
+</html>

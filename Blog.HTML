@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nuestro Proyecto</title>
+    <link rel="stylesheet" href="blog.css">
+
+    <!-- Fuente estilo cyberpunk -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo general cyberpunk */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            color: #fff;
+        }
+
+        header {
+            background-color: #0ff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 0 15px #0ff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #0ff;
+            text-decoration: none;
+            font-size: 18px;
+            text-shadow: 0 0 5px #0ff;
+        }
+
+        nav ul li a:hover {
+            color: #f0f;
+            text-shadow: 0 0 10px #f0f;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 0 20px #0ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f0f;
+            text-shadow: 0 0 10px #f0f;
+        }
+
+        p {
+            text-align: center;
+            color: #ccc;
+        }
+
+        .blog-post {
+            background: rgba(20, 20, 30, 0.9);
+            padding: 20px;
+            margin: 30px 0;
+            border: 1px solid #0ff;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #0ff;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog-post img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #f0f;
+            border-radius: 10px;
+        }
+
+        .blog-post h2 {
+            color: #0ff;
+            margin: 15px 0;
+            text-shadow: 0 0 8px #0ff;
+        }
+
+        .hidden-text {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .hidden-text.active {
+            max-height: 300px;
+            margin-top: 15px;
+        }
+
+        .hidden-text p {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* Botón cyberpunk glitch */
+        .glitch-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #0ff;
+            background: transparent;
+            border: 2px solid #0ff;
+            border-radius: 8px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .glitch-btn::before,
+        .glitch-btn::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #0ff;
+            opacity: 0.1;
+            z-index: -1;
+            transform: translate(-5px, -5px);
+            transition: 0.3s ease;
+        }
+
+        .glitch-btn:hover::before {
+            transform: translate(5px, 5px);
+        }
+
+        .glitch-btn:hover::after {
+            transform: translate(-5px, -5px);
+        }
+
+        .glitch-btn:hover {
+            color: #f0f;
+            border-color: #f0f;
+            box-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #111;
+            color: #0ff;
+            border-top: 2px solid #0ff;
+            text-shadow: 0 0 5px #0ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="cinta de estilos.html">Inicio</a></li>
+            <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Carrusel.HTML">Carrusel</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Bienvenido a nuestro Blog</h1>
+    <p>Aquí encontrarás información sobre nuestras iniciativas y temas relacionados con la diversidad digital y la ciberseguridad.</p>
+
+    <!-- Artículos del Blog -->
+    <section class="blog-post">
+        <img src="ODS 4.jpg" alt="ODS 4 - Educación de calidad">
+        <h2>ODS 4: Educación de Calidad</h2>
+        <button class="glitch-btn">Leer más</button>
+        <div class="hidden-text">
+            <p>La educación de calidad es clave para el desarrollo sostenible. Buscamos reducir la brecha digital, asegurando que todas las personas tengan acceso a recursos educativos en línea.</p>
+        </div>
+    </section>
+
+    <section class="blog-post">
+        <img src="ODS 8.jpg" alt="ODS 8 - Trabajo Decente y Crecimiento Económico">
+        <h2>ODS 8: Trabajo Decente y Crecimiento Económico</h2>
+        <button class="glitch-btn">Leer más</button>
+        <div class="hidden-text">
+            <p>La digitalización ofrece nuevas oportunidades laborales. Exploramos cómo la tecnología puede ayudar a generar empleo digno y fomentar el emprendimiento.</p>
+        </div>
+    </section>
+
+    <section class="blog-post">
+        <img src="ODS 9.jpg" alt="ODS 9 - Industria, Innovación e infraestructura">
+        <h2>ODS 9: Industria, Innovación e infraestructura</h2>
+        <button class="glitch-btn">Leer más</button>
+        <div class="hidden-text">
+            <p>La infraestructura digital es esencial para el desarrollo. Discutimos la importancia de la innovación y el acceso a la tecnología en comunidades menos favorecidas.</p>
+        </div>
+    </section>
+
+    <section class="blog-post">
+        <img src="ODS 10.jpg" alt="ODS 10 - Reducción de las desigualdades">
+        <h2>ODS 10: Reducción de las desigualdades</h2>
+        <button class="glitch-btn">Leer más</button>
+        <div class="hidden-text">
+            <p>El acceso equitativo a la tecnología es clave para cerrar brechas sociales y económicas. Hablamos sobre cómo lograr una mayor inclusión digital.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Nuestro Proyecto. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.glitch-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const hiddenText = button.nextElementSibling;
+            hiddenText.classList.toggle('active');
+            button.textContent = hiddenText.classList.contains('active') ? 'Leer menos' : 'Leer más';
+        });
+    });
+</script>
+
+</body>
+</html>

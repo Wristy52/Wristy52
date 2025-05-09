@@ -1,0 +1,1 @@
+La diversidad digital se refiere a la variedad y diferencias que existen en el acceso, uso y capacidades relacionadas con las tecnologías digitales, como internet, dispositivos electrónicos y plataformas digitales.

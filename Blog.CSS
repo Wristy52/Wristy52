@@ -1,0 +1,158 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0c29;
+    color: #ffffff;
+}
+
+/* Cinta de navegación */
+header {
+    background: linear-gradient(to right, #3a0ca3, #4361ee);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 0 10px #00f5d4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00fff7;
+    text-shadow: 0 0 8px #00fff7;
+}
+
+/* Sección principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 15px #7209b7;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #00f5d4;
+    text-shadow: 0 0 10px #00f5d4;
+}
+
+p {
+    text-align: center;
+    color: #cccccc;
+}
+
+/* Estilos de las publicaciones */
+.blog-post {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #4cc9f0;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px #4cc9f0;
+}
+
+.blog-post img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #4cc9f0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4cc9f0;
+}
+
+.blog-post h2 {
+    color: #f72585;
+    text-shadow: 0 0 8px #f72585;
+}
+
+.blog-post p {
+    color: #adb5bd;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00fff7;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 6px #00fff7;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.blog-post a:hover {
+    color: #f72585;
+    text-shadow: 0 0 10px #f72585;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #3a0ca3, #4361ee);
+    color: white;
+    box-shadow: 0 0 10px #00f5d4;
+    margin-top: 40px;
+}
+
+/* Texto oculto con transición */
+.hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.hidden-text p {
+    margin: 0;
+    padding-top: 10px;
+    color: #cccccc;
+}
+
+/* Cuando está activo (visible) */
+.hidden-text.active {
+    max-height: 300px;
+}
+
+/* Botón estético */
+.toggle-btn {
+    margin-top: 10px;
+    background-color: #7209b7;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #4cc9f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.toggle-btn:hover {
+    background-color: #f72585;
+    box-shadow: 0 0 15px #f72585, 0 0 25px #4cc9f0;
+}

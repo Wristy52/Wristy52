@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Puedes mover esto a Estilos.css si prefieres */
+        body {
+            background-color: #0f0c29;
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            text-shadow: 0 0 5px #00f5d4, 0 0 10px #00f5d4;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .about-hero h1 {
+            font-size: 48px;
+            animation: pulse 2s infinite;
+        }
+
+        .ods-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #f72585, 0 0 30px #4cc9f0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #00f5d4; }
+            50% { text-shadow: 0 0 20px #4cc9f0; }
+            100% { text-shadow: 0 0 10px #00f5d4; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="cinta de estilos.html">Inicio</a></li>
+            <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Carrusel.HTML">Carrusel</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- SECCIÓN "SOBRE NOSOTROS" -->
+<section class="hero about-hero">
+    <div>
+        <h1>Sobre Nosotros</h1>
+    </div>
+</section>
+
+<!-- SECCIÓN "QUIÉNES SOMOS" -->
+<section class="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un equipo comprometido con la inclusión digital en nuestra comunidad web, permitiendo que cada uno de nuestros usuarios tenga un acceso igualitario a la tecnología. También trabajamos para que más personas accedan a una educación digital de calidad.</p>
+</section>
+
+<!-- SECCIÓN "ODS RELACIONADAS" -->
+<section class="ods-section">
+    <h2>ODS Relacionadas</h2>
+    <div class="ods-container">
+        <!-- ODS 4 -->
+        <div class="ods-card">
+            <img src="ODS 4.jpg" alt="ODS 4">
+            <h3>ODS 4: Educación de calidad</h3>
+            <p>Formación en el uso seguro de plataformas digitales y fomento de prácticas éticas para fortalecer la educación digital.</p>
+        </div>
+
+        <!-- ODS 8 -->
+        <div class="ods-card">
+            <img src="ODS 8.jpg" alt="ODS 8">
+            <h3>ODS 8: Trabajo decente y crecimiento económico</h3>
+            <p>Protección de infraestructuras y datos digitales como clave para el empleo estable y continuo.</p>
+        </div>
+
+        <!-- ODS 9 -->
+        <div class="ods-card">
+            <img src="ODS 9.jpg" alt="ODS 9">
+            <h3>ODS 9: Industria, Innovación e Infraestructura</h3>
+            <p>Impulsamos la confianza en tecnologías emergentes que generan desarrollo sostenible e inclusivo.</p>
+        </div>
+
+        <!-- ODS 10 -->
+        <div class="ods-card">
+            <img src="ODS 10.jpg" alt="ODS 10">
+            <h3>ODS 10: Reducción de las Desigualdades</h3>
+            <p>Fomentamos la inclusión tecnológica para reducir la brecha digital en todos los sectores.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
