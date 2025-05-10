@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversidad Digital</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            color: #fff;
+        }
+
+        header {
+            background-color: #0ff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 0 15px #0ff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #0ff;
+            text-decoration: none;
+            font-size: 18px;
+            text-shadow: 0 0 5px #0ff;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f0f;
+            text-shadow: 0 0 10px #f0f;
+        }
+
+        .marquesina {
+            font-size: 18px;
+            color: #0ff;
+            background: #111;
+            padding: 10px;
+            border-top: 2px solid #0ff;
+            border-bottom: 2px solid #0ff;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #f0f;
+            text-shadow: 0 0 10px #f0f;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .contenido, .seccion-justificacion, .seccion-relevancia {
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .contenido h2, .seccion-justificacion h3, .seccion-relevancia h3 {
+            color: #0ff;
+            text-shadow: 0 0 8px #0ff;
+        }
+
+        .contenido p, .seccion-justificacion p, .seccion-relevancia p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .seccion-justificacion, .seccion-relevancia {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .seccion-justificacion .imagen, .seccion-relevancia .imagen {
+            flex: 1 1 40%;
+        }
+
+        .seccion-justificacion .texto, .seccion-relevancia .texto {
+            flex: 1 1 55%;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #f0f;
+            box-shadow: 0 0 15px #f0f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cinta de estilos.html">Inicio</a></li>
+                <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Carrusel.HTML">Carrusel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquesina -->
+    <marquee behavior="scroll" direction="right" class="marquesina">
+        ¿Te interesa conocer acerca de la Diversidad Digital?
+    </marquee>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <h1>Diversidad Digital</h1>
+            <p>Diversidad Digital y su importancia en la sociedad</p>
+        </div>
+    </section>
+
+    <!-- Contenido -->
+    <section class="contenido">
+        <h2>¿Qué es la diversidad digital?</h2>
+        <p>
+            La diversidad digital se refiere a la variedad y diferencias que existen en el acceso, 
+            uso y capacidades relacionadas con las tecnologías digitales, como internet, dispositivos 
+            electrónicos y plataformas digitales.
+        </p>
+    </section>
+
+    <!-- Justificación -->
+    <section class="seccion-justificacion">
+        <div class="texto">
+            <h3>¿Por qué este tema?</h3>
+            <p>
+                Es muy importante en la actualidad no solo para trabajar y estudiar sino para nuestro día a día. 
+                Es indispensable saber manejar la tecnología ya que en estos manejamos información personal, bancaria, 
+                institucional que se tiene de manera rápida y extremadamente fácil de obtener.
+            </p>
+        </div>
+        <div class="imagen">
+            <img src="Imagen sobre la justificacion.jpg" alt="Imagen sobre la justificación">
+        </div>
+    </section>
+
+    <!-- Relevancia -->
+    <section class="seccion-relevancia">
+        <div class="imagen">
+            <img src="Imagen sobre la relevancia.jpg" alt="Imagen sobre la relevancia">
+        </div>
+        <div class="texto">
+            <h3>Relevancia para la comunidad</h3>
+            <p><strong>Inclusión:</strong> Promueve la participación de todos los grupos sociales.</p>
+            <p><strong>Innovación:</strong> La variedad de perspectivas y experiencias puede fomentar la creatividad y la innovación de soluciones digitales.</p>
+            <p><strong>Acceso equitativo:</strong> Asegura que todos tengan acceso a las herramientas y recursos digitales.</p>
+            <p><strong>Empoderamiento:</strong> Facilita el empoderamiento de comunidades marginadas.</p>
+            <p><strong>Conexión social:</strong> Fomenta la creación de redes y relaciones entre diferentes grupos.</p>
+            <p><strong>Desarrollo sostenible:</strong> Ayuda a abordar problemas locales a través de soluciones digitales adaptadas a las necesidades específicas de la comunidad.</p>
+        </div>
+    </section>
+
+</body>
+</html>
